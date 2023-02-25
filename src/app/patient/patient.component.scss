@@ -1,0 +1,28 @@
+$basic-space: 4px;
+
+.room-info {
+  margin: calc($basic-space * 2);
+
+  &_person {
+    margin: calc($basic-space * 4) 0px;
+
+    & div {
+      padding-bottom: $basic-space;
+    }
+  }
+
+  &_table {
+    & table {
+      border-collapse: collapse;
+      width: 300px;
+    }
+
+    & td,
+    th {
+      font-weight: 400;
+      border: 1px solid #000000;
+      text-align: left;
+      padding: $basic-space;
+    }
+  }
+}

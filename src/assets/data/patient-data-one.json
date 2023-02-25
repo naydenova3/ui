@@ -1,0 +1,94 @@
+{
+  "bed": {
+    "id": "Bed 01",
+    "patient": {
+      "name": "Mann, Randy",
+      "age": 29,
+      "mrn": "307729266",
+      "dateOfBirth": "10/13/1991 12:00:00 AM",
+      "deviceMappings": [
+        {
+          "device": {
+            "id": "CB00110001",
+            "category": "Pulse Oximeter",
+            "type": "Nellcor",
+            "model": "N-600",
+            "measurements": [
+              {
+                "id": "Date",
+                "value": "22-DEC-20",
+                "metaData": {
+                  "color": "#ffffff",
+                  "uom": null
+                }
+              },
+              {
+                "id": "Time",
+                "value": "16:54:03",
+                "metaData": {
+                  "color": "#ffffff",
+                  "uom": null
+                }
+              },
+              {
+                "id": "SPO2",
+                "value": "92",
+                "metaData": {
+                  "color": "#00FFFF",
+                  "uom": "%"
+                }
+              },
+              {
+                "id": "BPM",
+                "value": "60",
+                "metaData": {
+                  "color": "#4AAD21",
+                  "uom": null
+                }
+              },
+              {
+                "id": "PA",
+                "value": "8",
+                "metaData": {
+                  "color": "#ffffff",
+                  "uom": null
+                }
+              },
+              {
+                "id": "MODE",
+                "value": "0",
+                "metaData": null
+              },
+              {
+                "id": "POLLTIME",
+                "value": "2020-12-22T15:54:03Z",
+                "metaData": null
+              },
+              {
+                "id": "TZ",
+                "value": "Central Europe Standard Time",
+                "metaData": null
+              },
+              {
+                "id": "TZ_Offset",
+                "value": "UTC +01:00",
+                "metaData": null
+              }
+            ],
+            "alarms": [
+              {
+                "id": "LowBatt",
+                "value": "ALARM",
+                "metaData": {
+                  "color": null,
+                  "backgroundColor": "#00FFFF",
+                  "level": "Technical"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

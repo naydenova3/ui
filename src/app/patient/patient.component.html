@@ -1,0 +1,45 @@
+<section class="room-info">
+  <section class="room-info_person">
+    <div *ngIf="roomId">
+      <span> Room Name: {{ roomId }} </span>
+    </div>
+    <ng-container *ngIf="patientInfo">
+      <div *ngIf="patientInfo.name">
+        <span>Patient Name: {{ patientInfo.name }}</span>
+      </div>
+      <div *ngIf="patientInfo.age && patientInfo.dateOfBirth">
+        <span>Age: {{ patientInfo.age }}, </span>
+        <span> DOB: {{ patientInfo.dateOfBirth | customDateTransform }}</span>
+      </div>
+      <div *ngIf="patientInfo.mrn">
+        <span>MRN: {{ patientInfo.mrn }}</span>
+      </div>
+    </ng-container>
+  </section>
+  <section *ngIf="measurementsData" class="room-info_table">
+    <table>
+      <tr>
+        <th>Measurement</th>
+        <th>Value</th>
+      </tr>
+      <tr *ngFor="let measureItem of measurementsData">
+        <td
+          *ngIf="measureItem.id"
+          [style.background-color]="
+            measureItem.metaData && measureItem.metaData.color
+              ? measureItem.metaData.color
+              : defaultColor
+          "
+        >
+          <span
+            >{{ measureItem.id }}
+            <span *ngIf="measureItem.metaData && measureItem.metaData.uom">{{
+              measureItem.metaData.uom
+            }}</span>
+          </span>
+        </td>
+        <td *ngIf="measureItem.value">{{ measureItem.value }}</td>
+      </tr>
+    </table>
+  </section>
+</section>
